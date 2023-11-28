@@ -1,0 +1,155 @@
+@media only screen and (max-width: 1100px) {
+   .footer{
+    flex-wrap: wrap;
+   }
+   .footer-img{
+    flex-wrap: wrap;
+    justify-content: center;
+   }
+  }
+@media only screen and (max-width:900px) {
+    .movie img{
+        width: 250px;
+        margin: 10px 5px;
+    }
+    .rigth-btn img{
+        width: 30px;
+        height: 30px;
+    }
+    .left-btn img{
+        width: 30px;
+        height: 30px;
+    }
+    .footer-img img{
+        width: 150px;
+    }
+}
+@media only screen and (max-width:750px){
+    .hero{
+        width: 100%;
+    }
+    .hero img{
+        height: 150px;
+        width: 100%;
+    }
+}
+@media only screen and (max-width:700px){
+    .series p{
+        margin: 10px 0;
+    }
+    .series{
+        margin: 0 20px;
+    }
+}
+@media only screen and (max-width:600px){
+    .hero img{
+        height: 120px;
+        width: 100%;
+    }
+    .rigth-btn img{
+        display: none;
+    }
+    .left-btn img{
+        display: none;
+    }
+    .thumbnail::-webkit-scrollbar{
+        height: 1px;
+    }
+    .thumbnail::-webkit-scrollbar-track{
+        background-color: rgb(107, 107, 107);
+    }
+    .thumbnail::-webkit-scrollbar-thumb{
+        background-color: rgb(161, 161, 161);
+    } 
+    .thumbnail{
+        margin: 10px 0;
+    }
+    .movie img{
+        width: 220px;
+    }
+    nav{
+        flex-wrap: wrap;
+    }
+}
+@media only screen and (max-width:500px){
+    nav{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        height: 120px;
+        background-image: linear-gradient(rgba(231, 0, 39, 0.205),#1A2224);
+        position: relative;
+    }
+    .nav-setting img{
+        display: none;
+    }
+    .nav-items {
+        white-space: nowrap;
+        overflow-x: auto !important; 
+        overflow-y: hidden !important;
+        width: 100%;
+        height: 30px;
+        padding: 30px 0;
+    }
+    .nav-items::-webkit-scrollbar{
+        height: 0px;
+    }
+    .nav-items ul li a{
+        background-color: rgba(85, 85, 85, 0.555);
+        padding: 5px 10px;
+        width: 100px;
+        border-radius: 50px;
+        margin: 0 5px;
+    }
+    .nav-logo{
+        margin-top: 10px;
+    }
+    .current{
+        color: white !important;
+        background-image: linear-gradient(to right, #de1436,#DE146D) !important;
+    }
+    .hide{
+        display: block;
+    }
+    .hero img{
+        height: 100px;
+    }
+    .series p{
+        font-size: 0.9rem;
+    }
+    .movie img{
+        width: 170px;
+    }
+
+    .nav-botttom{
+        display:flex;
+        background-color: #1A2224;
+        justify-content: space-evenly;
+        padding: 10px;
+        overflow: hidden;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+    .b-items{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: s;
+    }
+    .b-items p{
+        color: rgb(136, 136, 136);
+    }
+    .b-items i{
+        color: rgb(136, 136, 136) !important;
+    }
+    .b-actvie p{
+        color: white;
+    }
+    .b-actvie i{
+        color: #DE146D !important;
+    }
+}
+

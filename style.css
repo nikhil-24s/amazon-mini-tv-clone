@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Roboto:wght@300;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: #0f1213;
+    overflow-x: hidden;
+}
+/* Navbar  */
+.nav-botttom{
+    display: none;
+}
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #1A2224;
+    height: 70px;
+    position: sticky;
+    z-index: 5;
+    top: 0;
+    width: 100%;
+}
+.nav-logo{
+    width: 150px;
+}
+.nav-items{
+    display: flex;
+    align-items: center;
+}
+.nav-items ul{
+    display: flex;
+}
+.nav-items ul li{
+    list-style: none;
+}
+.nav-items ul li a{
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+    /* font-weight: bold; */
+}
+.active{
+    color: #DE146D;
+}
+.nav-setting{
+    display: flex;
+    align-items: center;
+}
+.nav-setting img{
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+.hide{
+    display: none;
+}
+
+/* Hero */
+
+.hero img{
+    width: 100%;
+   
+}
+
+/* Movies poster */
+
+.series p{
+    color: white;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin: 20px 0
+}
+.series{
+    margin: 30px 50px;
+}
+.movie img{
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease-in ;
+    margin: 20px 10px;
+}
+.movie img:hover{
+    transform: scale(1.1);
+}
+.thumbnail{
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: flex;
+    scroll-behavior: smooth;
+}
+.thumbnail::-webkit-scrollbar{
+    height: 0px;
+}
+/* .thumbnail::-webkit-scrollbar-track{
+    background-color: rgb(107, 107, 107);
+}
+.thumbnail::-webkit-scrollbar-thumb{
+    background-color: rgb(161, 161, 161);
+} */
+.rigth-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rigth-btn img{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 20px;
+    transform: rotate(180deg);
+    cursor: pointer;
+    background-color: #1a22245e;
+    border-radius: 50%;
+}
+.left-btn img{
+    width: 50px;
+    height: 5opx;
+    position: absolute;
+    cursor: pointer;
+    background-color: #1a22245e;
+    border-radius: 50%;
+    display: none;
+    transition: all 1s ease-in 1s;
+}
+.left-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* footer  */
+
+.footer{
+    background-color: #1A2224;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.footer-img{
+    display: flex;
+    align-items: center;
+    margin: 30px 10px;
+}
+.footer-img img{
+    width: 200px;
+    padding: 10px ;
+
+}
+.socialmedia img{
+    width: 50px;
+    border: 2px solid rgba(39, 39, 39, 0.918);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Episod image  */
+
+.ep-banner{
+    margin-top: 5px;
+    height: 70vh;
+    background-size:cover;
+    background-repeat: no-repeat;
+    filter: blur(5px) brightness(0.5);
+}
+.episod-container{
+    position: absolute;
+    top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px 50px;
+}
+.video img{
+    width:40vw;
+    height: 50vh;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.title p{
+    color: white;
+    padding: 10px 0;
+}
+.ep-heading{
+    font-size: large;
+    font-weight: bold;
+}
+.ep-heading span{
+    font-size: 25px;
+}
+.btn-play{
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(to right, #de1436,#DE146D);
+    width: 170px;
+    padding: 10px 20px;
+    justify-content: space-evenly;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.ep-des{
+    padding: 5px !important;
+    color: #cacaca !important;
+}
+.video .ep-play{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 170px;
+    right:300px ;
+    cursor: pointer;
+    transition: all ease 1s;
+}
+.video:hover .ep-play{
+    transform: scale(1.5);
+}
+
+/* Episods Card  */
+.episods{
+    margin: 30px 50px;
+}
+.season-heading{
+    color: white;
+    text-decoration:5px underline;
+    text-underline-offset: 0.5em;
+    text-decoration-color:#DE146D;
+    margin: 30px 0;
+    font-weight: bold;
+    font-size: large;
+}
+.ep-card{
+    display: flex;
+    background-color: #1A2224;
+    margin: 20px;
+}
+.episod-play{
+    position: relative;
+    bottom: 50px;
+    right: 170px;
+    width: 50px !important;
+    height: 50px !important;
+}
+.ep-img img{
+    width: 270px;
+    height: 150px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.ep-description{
+    color: rgb(131, 131, 131);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.ep-description p{
+    margin: 10px 0;
+}
+.ep-title{
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: white;
+}
